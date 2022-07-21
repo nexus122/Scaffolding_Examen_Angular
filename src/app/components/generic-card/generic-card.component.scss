@@ -1,0 +1,32 @@
+.card-film{
+    border-radius: 1em;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.panel-info{
+    padding: 1em;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    transform: translate(0px, 318px);
+    transition: transform 0.5s;
+}
+
+.card-film:hover .panel-info{
+    transform: translate(0px, 218px);
+}
+
+@media (max-width: 425px) {
+    .card-film{
+        width: 300px;
+        height: 300px;
+    }
+    .panel-info{
+        transform: translate(0px, 0px);
+    }
+    
+}
